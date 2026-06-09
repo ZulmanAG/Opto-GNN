@@ -1,0 +1,15 @@
+model:
+  esm_model_name: "facebook/esm2_t6_8M_UR50D"
+  hidden_dim: 64
+  heads: 4
+  lr: 0.001
+  weight_decay: 0.0001
+
+training:
+  epochs: 50
+  batch_size: 16
+  test_size: 0.2
+  alpha_loss: 0.5
+
+data:
+  threshold_contact: 0.3
